@@ -1,0 +1,46 @@
+body {
+	margin-left: 0;
+	margin-right: 0;
+	background-color: pink;
+}
+.randomStyle {
+	color: blueviolet;
+	background-color: aquamarine;
+	box-shadow: 3px 3px 10px lightcoral;
+	padding: 44px;
+}
+
+.wrapperParentDiv {
+	width: 100%;
+	background-color: red;
+}
+
+.wrapperParentDiv h1 {
+	text-align: center;
+}
+
+.petsParentDiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1%;
+	width: 90%;
+	background-color: blueviolet;
+	margin: auto;
+	padding: 0;
+	color: rgb(0, 0, 0);
+}
+
+.petsBlock {
+	/* width: 27%;
+	margin-right: 1%; */
+	border: 3px solid lightcoral;
+	background-color: lightgreen;
+	text-align: center;
+	padding: 1%;
+	/* float: left; */
+	height: 660px;
+}
+
+.petsBlock img {
+	width: 80%;
+}
