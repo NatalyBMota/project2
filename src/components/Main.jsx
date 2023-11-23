@@ -15,16 +15,4 @@ function Main() {
   </main>;
 }
 
-/*
-let imgSource = "images/driver.jpg";
-
-function Main() {
-  return <main>
-    <div id="picture">
-      <img src={imgSource} alt="image of driving" />
-    </div>
-    <Table />
-  </main>;
-}
-*/
 export default Main;

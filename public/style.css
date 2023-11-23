@@ -176,11 +176,18 @@ img#drivingPic {
 	border: 3px solid rgb(183,135,39);
 	border-radius: 10px;
 	background-color: #fff;
-	text-align: center;
 	padding: 0;
 	padding-top: 8px;
 	/* float: left; */
 	height: 590px;
+	text-align: center;
+}
+
+.cardBlock>p {
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: 1.1rem;
+	text-align: left;
 }
 
 .cardBlock:first-of-type {
@@ -239,6 +246,7 @@ img#drivingPic {
 }
 footer {
 	text-align: center;
+	font-size: .9rem;
 	padding-top: 3.5rem;
 	padding-bottom: 4rem;
 	border: 5px solid rgba(218,165,32,.5) ;
