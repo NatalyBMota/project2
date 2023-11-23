@@ -2,6 +2,7 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	background-color: pink;
+	background-image: url('images/background/gold-foil-1.jpg');
 	font-family: 'Merriweather', serif;
 }
 
@@ -12,6 +13,7 @@ h1 {
 .header {
 	margin-bottom: 0;
 	padding: 10px 25px;
+	color: rgb(81, 52, 11);
 }
 
 nav {
@@ -19,8 +21,9 @@ nav {
 	margin-bottom: 0;
 	padding-top: 1.2rem;
 	padding-bottom: 1.2rem;
-	background-color: beige;
-	border: 5px solid #FFE4B5;  
+	/*background-image: url('images/background/brushed-metal.jpg');*/
+	background-color: rgba(218,165,32, .7);
+	border: 5px solid rgba(184,134,11, .7)
 }
 
 ul li {
