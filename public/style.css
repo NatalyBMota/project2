@@ -136,8 +136,8 @@ img#drivingPic {
 	width: 100%;
 	box-sizing: border-box;
 	padding-bottom: 6rem;
-	background-color: rgba(228,217,111, .9);
-	border: 4px solid rgba(155,135,12, .9);
+	background-color: rgba(228,217,111, .5);
+	border: 4px solid rgba(155,135,12, .5);
 }
 
 .wrapperParentSection>h1 {
@@ -159,7 +159,7 @@ img#drivingPic {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 1%;
 	width: 90%;
-	background-color: rgba(238,232,170,.6);
+	background-color: rgba(238,232,170,.5);
 	margin: auto;
 	padding: 0;
 	color: rgb(0, 0, 0);
