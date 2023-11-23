@@ -3,13 +3,16 @@ import Card from './Card';
 
 function CreateCard(cars) {
 	return <Card
-            key={cars.petID} 
-            petName={cars.name} 
+            key={cars.carID} 
+            carName={cars.name} 
 			imgSrc={cars.imgURL} 
             imgAlt={cars.imgAlt}
+            imgTitle = {cars.imgTitle}
             age={cars.age} 
-            species={cars.species} 
-            petId={cars.petID}
+            kind={cars.kind}
+            color={cars.color}
+            features={cars.features} 
+            carId={cars.carID}
         />;
 }
 

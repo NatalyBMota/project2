@@ -1,14 +1,22 @@
 body {
 	margin-left: 0;
 	margin-right: 0;
-	background-color: pink;
+	background-color: rgb(212,175,55);
 	background-image: url('images/background/brushed-metal-2.jpg');
 	/* background-image: url('images/background/gold-foil-1.jpg');*/
-	font-family: 'Merriweather', serif;
+	font-family: 'Josefin Sans', sans-serif;
+	/* font-family: 'Merriweather', serif; */
+}
+
+header>h1 {
+	font-family: 'Yeseva One', serif;
 }
 
 h1 {
-	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	padding-left: 25px;
+	/* font-family: 'Cardo', serif; */
+	/* font-family: 'Oswald', sans-serif; */
 }
 
 .header {
@@ -23,34 +31,50 @@ nav {
 	padding-top: 1.2rem;
 	padding-bottom: 1.2rem;
 	/*background-image: url('images/background/brushed-metal.jpg');*/
-	background-color: rgba(218,165,32, .9);
-	border: 5px solid rgba(184,134,11, .9)
+	background-color: rgba(218,165,32, .3);
+	border: 5px solid rgba(184,134,11, .5)
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	letter-spacing: 1px;
+	font-weight: bold;
 }
 
 ul li {
-	display: inline-block;
-	padding: 5px 10px;
-	padding-top: 5px;
+	display: block;
+	list-style-type: none;
+	padding: 15px 30px;
 	margin-right: 10px;
-	border: 2px solid green;
-	background-color: lightgreen;
+	border: 2px solid rgba(155,135,12,.8);
+	background-color: rgba(228,217,111,.8);
 	border-radius: 7px;
+	filter: drop-shadow(5px 3px rgba(153,101,21,0.1));
+	transition: all .3s ease; 
 }
 
 a {
-	color: purple;
+	color: rgb(150,113,23);
 	text-decoration: none;
 	font-weight: bold;
 }
 
+ul>li:hover {
+	filter: drop-shadow(10px 5px rgba(0,0,0,0.1));
+	transition: all .3s ease;
+}
+
 ul>li:hover, a:hover {
-	background-color: aqua;
-	color: navy;
+	background-color: rgba(234,224,200,.9);
+	color: rgb(212,175,55);
 }
 
 main {
 	padding-top: 3rem;
 	background-color: rgba(203,161,53, .8);
+	background-image: url('images/background/brushed-metal-4.jpg');
 	border: 5px solid rgba(183,135,39, .8);
 }
 
@@ -58,25 +82,25 @@ img#mainPic {
 	display: block;
 	margin: auto;
 	width: 50%;
-	border: 10px solid purple;
+	border: 10px solid rgba(218,165,32, .3);
 	border-radius: 5%;
 }
 
 table {
 	display: block;
-	width: 365px;
-	height: 192px;
+	width: 392px;
+	height: 205px;
 	margin: auto;
 	margin-top: 3rem;
 	margin-bottom: 5rem;
 	padding-bottom: 5rem;
-	border: 2px solid orange;	
+	border: 2px solid rgb(218,165,32);	
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
 }
 
 th {
-	background-color: lavender;
+	background-color: rgba(250,240,190, .7) ;
 	font-weight: 700;
 }
 
@@ -90,17 +114,17 @@ td {
 
 th, td {
 	padding: 10px 20px;
-	border: 2px solid orange;
+	border: 2px solid rgb(203,161,53);
 }
-
+/*
 img#drivingPic {
 	display: block;
 	margin: auto;
 	width: 50%;
-	border: 10px solid purple;
+	border: 10px solid rgb(153,101,21) ;
 	border-radius: 5%;
 }
-
+*/
 .randomStyle {
 	color: blueviolet;
 	background-color: aquamarine;
@@ -110,20 +134,32 @@ img#drivingPic {
 
 .wrapperParentSection {
 	width: 100%;
+	box-sizing: border-box;
+	padding-bottom: 6rem;
 	background-color: rgba(228,217,111, .9);
 	border: 4px solid rgba(155,135,12, .9);
 }
 
-.wrapperParentSection h1 {
+.wrapperParentSection>h1 {
 	text-align: center;
+	font-size: 2rem;
+	padding-top: 4.5rem;
+	padding-bottom: 2rem;
 }
 
 .carsParentDiv {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	column-gap: .8rem;
+	row-gap: .3rem;
+	/*
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 1%;
+	*/
 	width: 90%;
-	background-color: blueviolet;
+	background-color: rgba(238,232,170,.6);
 	margin: auto;
 	padding: 0;
 	color: rgb(0, 0, 0);
@@ -132,31 +168,54 @@ img#drivingPic {
 .cardBlock {
 	/* width: 27%;
 	margin-right: 1%; */
+	flex-grow: 1;
+	flex-basis: 22%;
+	min-width: 250px;
 	margin-top: 10px;
-	border: 3px solid #f08080;
+	box-sizing: border-box;
+	border: 3px solid rgb(183,135,39);
 	border-radius: 10px;
-	background-color: lightgreen;
+	background-color: #fff;
 	text-align: center;
 	padding: 0;
+	padding-top: 8px;
 	/* float: left; */
-	height: 655px;
+	height: 590px;
 }
 
+.cardBlock:first-of-type {
+	padding-top: 44px;
+}
+
+.cardBlock:nth-of-type(2) {
+	padding-top: 19px;
+}
+
+.cardBlock:nth-of-type(4) {
+	padding-top: 26px;
+}
 .cardBlock img {
+	width: 90%;
+	/*
 	width: 100%;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
+	*/
+	margin-top: 1.5rem;
+	margin-left: 5%;
+	padding-bottom: 1.5rem;
+	border-bottom: 3px dotted rgb(238,232,170) ;
 }
 
 /* 
-	The code for the btn class, the btn + btn selector, fill class and .fill:hover selectors was developed by Marcelo Lopez and provided free of charge for reuse at CodePen.io. You can find it here: https://codepen.io/marcell0lopes/pen/YzLKxpR 
+	The code for the btn class, the btn + btn selector, fill class and .fill:hover selectors was developed by Marcelo Lopez and provided free of charge for reuse at CodePen.io. You can find it here: https://codepen.io/marcell0lopes/pen/YzLKxpR . Colors were modified by me, with the help of color suggestions for a golden pallet, which can be found here: https://html-color.codes/gold .
 */
 .btn {
 	border: none;
 	padding: 12px 24px;
 	border-radius: 24px;
-	font-size: 12px;
-	font-size: 0.8rem;  
+	font-size: 0.8rem;
+	font-weight: bold;
 	letter-spacing: 2px;  
 	cursor: pointer;
 }
@@ -166,23 +225,22 @@ img#drivingPic {
 }
 
 .fill {
-	background: rgba(0, 212, 255, 0.9);
+	background: rgba(153,101,21,0.9);
 	color: rgba(255,255,255,0.95);
 	filter: drop-shadow(0);
-	font-weight: bold;
 	transition: all .3s ease; 
 }
 
 .fill:hover{
 	transform: scale(1.125);  
 	border-color: rgba(255, 255, 255, 0.9);
-	filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+	filter: drop-shadow(0 10px 5px rgba(0,0,0,0.1));
 	transition: all .3s ease;    
 }
 footer {
 	text-align: center;
-	padding-top: 1.5rem;
-	padding-bottom: 2rem;
-	border: 5px solid seagreen;
-	background-color: #FFFAFA;
+	padding-top: 3.5rem;
+	padding-bottom: 4rem;
+	border: 5px solid rgba(218,165,32,.5) ;
+	background-color: rgba(245,245,220, .9);
 }

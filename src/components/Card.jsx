@@ -5,11 +5,13 @@ import React from 'react';
 function Card(props) {
     
     return  <div className="cardBlock">
-                <img src={props.imgSrc} alt={props.imgAlt} />
-                <h1>{props.petName}</h1>
-                <p>Species: {props.species}</p>
-                <p>Age: <span>{props.age}</span></p>
-                <p>ID: <span>{props.petId}</span></p>
+                <img src={props.imgSrc} alt={props.imgAlt} title={props.imgTitle} />
+                <h1>{props.carName}</h1>
+                <p><strong>Kind:</strong> {props.kind}</p>
+                <p><strong>Age:</strong> <span>{props.age}</span></p>
+                <p><strong>Color:</strong> <span>{props.color}</span></p>
+                <p><strong>Features:</strong> <span>{props.features}</span></p>
+                <p><strong>ID:</strong> <span>{props.carId}</span></p>
                 <button className="btn fill">check more</button>	
             </div>;
 }
