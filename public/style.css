@@ -148,16 +148,16 @@ img#drivingPic {
 }
 
 .carsParentDiv {
+	/*
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	column-gap: .8rem;
 	row-gap: .3rem;
-	/*
+	*/
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 1%;
-	*/
 	width: 90%;
 	background-color: rgba(238,232,170,.6);
 	margin: auto;
