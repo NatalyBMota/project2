@@ -3,12 +3,12 @@ import CreateCard from './CreateCard';
 import cars from './cars.jsx';
 
 function CardWrapper() {
-    return <div className="wrapperParentDiv">
-        <h1>Pets Available for Adoption</h1>
+    return <aside className="wrapperParentDiv">
+        <h1>Cool Old-Fashioned Cars</h1>
         <div className="carsParentDiv">
             {cars.map(CreateCard)}
         </div>
-    </div>;
+    </aside>;
 }
 
 export default CardWrapper;
