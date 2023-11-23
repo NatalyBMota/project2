@@ -26,21 +26,24 @@ const childDivStyle = {
 	color: 'red'
 }
 */
-
+/*
 const userBirthY = [1990, 1992, 1994, 1996];
 
 let userAge = [];
-
+*/
 //for each single value of this array, we map to each object inside of this array.
+/*
 userAge = userBirthY.map(function(val){
 	return 2023 - val;
 });
 console.log(userAge);
-
+*/
 // arrow function
 // pVal - parameter value
+/*
 const calAge = (pVal) => 65 - (2023 - pVal);
 console.log(calAge(2022));
+*/
 /* So, how many years until that person retires?
 With arrow functions, you can only have one parameter value. */
 
@@ -50,16 +53,17 @@ With arrow functions, you can only have one parameter value. */
 - When we call the function below, it will not return an array. That's why we have to push every single item into a new array. 
 */
 // foreach()
-let userAge2 = [];
+//let userAge2 = [];
 /*
 userBirthY.forEach(function(val){
 	userAge2.push(2023 - val);
 });
 console.log(userAge2);
 */
+/*
 userBirthY.forEach((val) => userAge2.push(2023 - val));
 console.log(userAge2);
-
+*/
 /*
 function Card(props) {
     return  <div className="petsBlock">
