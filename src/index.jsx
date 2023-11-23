@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import pets from './pets';
-// import App from './components/App.jsx';
+import App from './components/App';
 
 /*
 let dogPicSrc = "https://tse4-mm.cn.bing.net/th/id/OIP-C.vnGOaFJhenpNROeLpVEi1gHaJ4?w=197&h=182&c=7&r=0&o=5&dpr=2&pid=1.7";
@@ -61,6 +60,7 @@ console.log(userAge2);
 userBirthY.forEach((val) => userAge2.push(2023 - val));
 console.log(userAge2);
 
+/*
 function Card(props) {
     return  <div className="petsBlock">
                 <img src={props.imgSrc} alt={props.imgAlt} />
@@ -71,7 +71,8 @@ function Card(props) {
                 <button>check more</button>	
             </div>;
 }
-
+*/
+/*
 function createCard(pets) {
 	return <Card
             key={pets.petID} 
@@ -83,14 +84,9 @@ function createCard(pets) {
             petId={pets.petID}
         />;
 }
-
+*/
 ReactDOM.render(  
-    <div className="wrapperParentDiv">
-        <h1>Pets Available for Adoption</h1>
-        <div className="petsParentDiv">
-            {pets.map(createCard)}
-        </div>
-    </div>,
+    <App />,
 document.getElementById('root'));
 
 

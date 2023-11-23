@@ -2,7 +2,101 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 	background-color: pink;
+	font-family: 'Merriweather', serif;
 }
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+}
+
+.header {
+	margin-bottom: 0;
+	padding: 10px 25px;
+}
+
+nav {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+	background-color: beige;
+	border: 5px solid #FFE4B5;  
+}
+
+ul li {
+	display: inline-block;
+	padding: 5px 10px;
+	padding-top: 5px;
+	margin-right: 10px;
+	border: 2px solid green;
+	background-color: lightgreen;
+	border-radius: 7px;
+}
+
+a {
+	color: purple;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+ul>li:hover, a:hover {
+	background-color: aqua;
+	color: navy;
+}
+
+main {
+	padding-top: 3rem;
+	background-color: pink;
+	border: 5px solid red;
+}
+
+img#mainPic {
+	display: block;
+	margin: auto;
+	width: 50%;
+	border: 10px solid purple;
+	border-radius: 5%;
+}
+
+table {
+	display: block;
+	width: 365px;
+	height: 192px;
+	margin: auto;
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+	padding-bottom: 5rem;
+	border: 2px solid orange;	
+	font-family: 'Merriweather', serif;
+	font-weight: 300;
+}
+
+th {
+	background-color: lavender;
+	font-weight: 700;
+}
+
+tr>td:first-of-type {
+	font-weight: 700;
+}
+
+td {
+	background-color: ivory;
+}
+
+th, td {
+	padding: 10px 20px;
+	border: 2px solid orange;
+}
+
+img#drivingPic {
+	display: block;
+	margin: auto;
+	width: 50%;
+	border: 10px solid purple;
+	border-radius: 5%;
+}
+
 .randomStyle {
 	color: blueviolet;
 	background-color: aquamarine;
@@ -19,9 +113,9 @@ body {
 	text-align: center;
 }
 
-.petsParentDiv {
+.carsParentDiv {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 1%;
 	width: 90%;
 	background-color: blueviolet;
@@ -30,17 +124,60 @@ body {
 	color: rgb(0, 0, 0);
 }
 
-.petsBlock {
+.cardBlock {
 	/* width: 27%;
 	margin-right: 1%; */
-	border: 3px solid lightcoral;
+	margin-top: 10px;
+	border: 3px solid #f08080;
+	border-radius: 10px;
 	background-color: lightgreen;
 	text-align: center;
-	padding: 1%;
+	padding: 0;
 	/* float: left; */
-	height: 660px;
+	height: 655px;
 }
 
-.petsBlock img {
-	width: 80%;
+.cardBlock img {
+	width: 100%;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+/* 
+	The code for the btn class, the btn + btn selector, fill class and .fill:hover selectors was developed by Marcelo Lopez and provided free of charge for reuse at CodePen.io. You can find it here: https://codepen.io/marcell0lopes/pen/YzLKxpR 
+*/
+.btn {
+	border: none;
+	padding: 12px 24px;
+	border-radius: 24px;
+	font-size: 12px;
+	font-size: 0.8rem;  
+	letter-spacing: 2px;  
+	cursor: pointer;
+}
+  
+.btn + .btn {
+	margin-left: 10px;
+}
+
+.fill {
+	background: rgba(0, 212, 255, 0.9);
+	color: rgba(255,255,255,0.95);
+	filter: drop-shadow(0);
+	font-weight: bold;
+	transition: all .3s ease; 
+}
+
+.fill:hover{
+	transform: scale(1.125);  
+	border-color: rgba(255, 255, 255, 0.9);
+	filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+	transition: all .3s ease;    
+}
+footer {
+	text-align: center;
+	padding-top: 1.5rem;
+	padding-bottom: 2rem;
+	border: 5px solid seagreen;
+	background-color: #FFFAFA;
 }

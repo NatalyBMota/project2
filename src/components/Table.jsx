@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Mytable() {
+function Table() {
     return <div>
         <table>
 			<tr>
@@ -25,4 +25,4 @@ function Mytable() {
     </div>;
 }
 
-export default Mytable;
+export default Table;

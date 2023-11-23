@@ -1,13 +1,20 @@
 import React from 'react';
-import Form from './Form';
-import Myheader from './Myheader.jsx';
-import Mytable from './Mytable.jsx';
+import Header from './Header.jsx';
+import Navbar from './Navbar.jsx';
+import Form from './Form.jsx';
+import Main from './Main.jsx';
+import CardWrapper from './CardWrapper.jsx';
+import Footer from './Footer.jsx';
+
 
 function App() {
     return <div>
-        <Myheader />
+        <Header />
+        <Navbar />
         <Form />
-        <Mytable />
+        <Main />
+        <CardWrapper />
+        <Footer />
     </div>;
 }
 

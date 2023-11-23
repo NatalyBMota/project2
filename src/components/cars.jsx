@@ -1,4 +1,4 @@
-const pets=[
+const cars=[
     {
         petID: 1,
         name: "Rex",
@@ -6,8 +6,8 @@ const pets=[
         species: "Dog",
         color: "golden",
         hobby: "run",
-        imgURL:"./images/dog.jpg",
-        dogPicAlt: "A dog called Rex.",
+        imgURL:"./images/cruisin-oldies.jpg",
+        imgAlt: "A clasic car.",
         ownerID: 103
     
     },
@@ -18,8 +18,8 @@ const pets=[
         species: "Cat",
         color: "orangish brown, white, and black",
         hobby: "scracth",
-        imgURL:"./images/cat.jpg",
-        rabbitPicAlt: "A cat called Cat.",
+        imgURL:"./images/buick.jpg",
+        imgAlt: "A clasic car.",
         ownerID: 102
     },
     {
@@ -29,8 +29,8 @@ const pets=[
         species: "Rabbit",
         color: "brown with white",
         hobby: "Jump",
-        imgURL:"./images/bunny.jpg",
-        catPicAlt: "A rabbit called Rabbit.",
+        imgURL:"./images/classic-chevy.jpg",
+        imgAlt: "A clasic car.",
         ownerID: 101
     }, 
     {
@@ -40,8 +40,8 @@ const pets=[
         species: "Chick",
         color: "beije with brown, white and yellow",
         hobby: "Pecking",
-        imgURL:"./images/chick.jpg",
-        catPicAlt: "A chick called Sunshine.",
+        imgURL:"./images/classic-car.jpg",
+        imgAlt: "A clasic car.",
         ownerID: 101
     }, 
     {
@@ -51,8 +51,8 @@ const pets=[
         species: "Macaw",
         color: "red with blue and white",
         hobby: "Flying",
-        imgURL:"./images/macaw.jpg",
-        catPicAlt: "A macaw called Loro. A macaw is a talking bird.",
+        imgURL:"./images/old-french-car.jpg",
+        imgAlt: "A clasic car.",
         ownerID: 101
     }, 
     {
@@ -60,12 +60,34 @@ const pets=[
         name: "Blue",
         age: 1,
         species: "Fish",
+        color: "red and white",
+        hobby: "Swimming",
+        imgURL:"./images/buick.jpg",
+        imgAlt: "A clasic Buick Super Riviera car in red with touches of white.",
+        ownerID: 101
+    },
+    {
+        petID: 7,
+        name: "Blue",
+        age: 1,
+        species: "Fish",
         color: "blue with yellow",
         hobby: "Swimming",
-        imgURL:"./images/fish.jpg",
-        catPicAlt: "A fish called blue.",
+        imgURL:"./images/oldie-ride.jpg",
+        imgAlt: "A clasic car.",
+        ownerID: 101
+    },
+    {
+        petID: 8,
+        name: "Buick",
+        age: 1,
+        species: "Fish",
+        color: "red and white",
+        hobby: "Swimming",
+        imgURL:"./images/toy-car.jpg",
+        imgAlt: "A clasic car.",
         ownerID: 101
     }
 ]
 
-export default pets;
+export default cars;
