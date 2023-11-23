@@ -13,7 +13,7 @@ if ((currentYear !== userBirthYear) && (userBirthYear >  (currentYear - 16))) {
 }
 
 function Message() {
-	return <span>{msg}</span>
+	return <h1 className="header">{msg}</h1>
 }
 
 export default Message;

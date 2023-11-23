@@ -3,9 +3,7 @@ body {
 	margin-right: 0;
 	background-color: rgb(212,175,55);
 	background-image: url('images/background/brushed-metal-2.jpg');
-	/* background-image: url('images/background/gold-foil-1.jpg');*/
 	font-family: 'Josefin Sans', sans-serif;
-	/* font-family: 'Merriweather', serif; */
 }
 
 header>h1 {
@@ -15,8 +13,6 @@ header>h1 {
 h1 {
 	font-weight: 700;
 	padding-left: 25px;
-	/* font-family: 'Cardo', serif; */
-	/* font-family: 'Oswald', sans-serif; */
 }
 
 .header {
@@ -30,7 +26,6 @@ nav {
 	margin-bottom: 0;
 	padding-top: 1.2rem;
 	padding-bottom: 1.2rem;
-	/*background-image: url('images/background/brushed-metal.jpg');*/
 	background-color: rgba(218,165,32, .3);
 	border: 5px solid rgba(184,134,11, .5)
 }
@@ -117,21 +112,13 @@ th, td {
 	border: 2px solid rgb(203,161,53);
 }
 /*
-img#drivingPic {
-	display: block;
-	margin: auto;
-	width: 50%;
-	border: 10px solid rgb(153,101,21) ;
-	border-radius: 5%;
-}
-*/
 .randomStyle {
 	color: blueviolet;
 	background-color: aquamarine;
 	box-shadow: 3px 3px 10px lightcoral;
 	padding: 44px;
 }
-
+*/
 .wrapperParentSection {
 	width: 100%;
 	box-sizing: border-box;
