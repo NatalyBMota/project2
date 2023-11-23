@@ -14,10 +14,10 @@ const headerStyle = {
 	backgroundColor: 'rgba(212,175,55, .5)',
 }
 
-if ((currentYear !== userBirthYear) && (userBirthYear > 16)) {
-	msg = 'CONGRATS! you can apply for driver license!';
+if ((currentYear !== userBirthYear) && (userBirthYear >  (currentYear - 16))) {
+	msg = 'CONGRATS! you can apply for driver license! 😄';
 } else {
-	msg = 'Sorry! You can NOT apply for a driver license!';
+	msg = 'Sorry! You can NOT apply for a driver license! 🙁';
 }
 
 //const imgSrc="https://images.freeimages.com/images/large-previews/400/bird-at-zoo-1579028.jpg";
