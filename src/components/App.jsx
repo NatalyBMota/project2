@@ -5,6 +5,8 @@ import Main from './Main.jsx';
 import CardWrapper from './CardWrapper.jsx';
 import Footer from './Footer.jsx';
 
+let yr = new Date();
+yr = yr.getFullYear();
 
 function App() {
     return <div>
@@ -12,7 +14,7 @@ function App() {
         <Navbar />
         <Main />
         <CardWrapper />
-        <Footer year={new Date().getFullYear()}/>
+        <Footer year={yr}/>
     </div>;
 }
 
