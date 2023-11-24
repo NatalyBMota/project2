@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Footer() {
+function Footer(props) {
   return <footer>
-    &copy; Made by Nataly Mota and by Joe Doe
+    &copy; {props.year} by Nataly Mota and by Joe Doe
   </footer>;
 }
 

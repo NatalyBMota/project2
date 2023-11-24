@@ -12,7 +12,7 @@ function App() {
         <Navbar />
         <Main />
         <CardWrapper />
-        <Footer />
+        <Footer year={new Date().getFullYear()}/>
     </div>;
 }
 
